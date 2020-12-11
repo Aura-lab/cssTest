@@ -1,0 +1,34 @@
+.body{
+    background-color: teal;
+    /*font-family: ;*/
+}
+.app{
+    display: grid;
+    grid-template-rows: 48px 1fr 128px;
+    grid-template-columns: 272px 1fr;
+    grid-template-areas: "header header"
+                         "sidbar content"
+                         "sidebar footer";
+    width: 100vw;
+    height: 100vh;
+    background-color: darkslateblue;
+}
+.header{
+    grid-area: header;
+    background-color: darkslategrey;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: dimgray;
+}
+.content {
+    grid-area: content;
+    grid-template-rows: min-content;
+    display: grid;
+    background-color: dodgerblue;
+}
+.footer{
+    grid-area: footer;
+    background-color: darkolivegreen;
+    color: white;
+}
